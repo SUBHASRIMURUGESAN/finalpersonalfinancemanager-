@@ -1,0 +1,137 @@
+.expense-container {
+    text-align: center;
+    padding: 20px;
+    background-image: url("../assets/expense-bg.jpg") no-repeat center center/cover; /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Expense Form Styling */
+  .expense-form {
+    display: flex;
+    flex-wrap: wrap; /* Allows responsiveness */
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .expense-form:hover {
+    transform: scale(1.02);
+  }
+  
+  .expense-form input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 220px;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .expense-form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Add Expense Button */
+  .expense-form button {
+    padding: 10px 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .expense-form button:hover {
+    background: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Expense List Styling */
+  .expense-list {
+    width: 85%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .expense-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f9f9f9;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .expense-list li:hover {
+    background: #e9ecef;
+  }
+  
+  /* Delete Expense Button */
+  .btn-sm {
+    margin-left: 10px;
+    padding: 6px 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .btn-sm:hover {
+    background: #c82333;
+    transform: scale(1.05);
+  }
+  
+  /* ✅ Responsive Styling */
+  @media (max-width: 480px) {
+    .expense-container {
+      padding: 10px;
+    }
+  
+    .expense-form {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .expense-form input {
+      width: 100%;
+    }
+  
+    .expense-list {
+      width: 95%;
+      padding: 15px;
+    }
+  }
+  

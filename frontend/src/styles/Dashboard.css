@@ -1,0 +1,16 @@
+.dashboard-container {
+    text-align: center;
+    padding: 50px;
+    
+    height: 100vh;
+    color: white;
+  }
+  
+  .dashboard-options {
+    margin-top: 20px;
+  }
+  
+  .dashboard-options button {
+    margin: 10px;
+  }
+  
